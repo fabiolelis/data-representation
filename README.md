@@ -54,8 +54,28 @@ The XML file contains rows "siteMeasurements" with the items:
     </ul>
     
     A example in XML may be looked below:
-    ```xml
-    <siteMeasurements><measurementSiteReference>NRA1681</measurementSiteReference><measurementTimeDefault>2015-11-12T19:10:00+00:00</measurementTimeDefault><measuredValue index="1"><basicDataValue xsi:type="TemperatureInformation"><period>3600</period><temperature><airTemperature>7.9</airTemperature><dewPointTemperature>4.2</dewPointTemperature></temperature></basicDataValue></measuredValue><measuredValue index="2"><basicDataValue xsi:type="PrecipitationInformation"><period>3600</period><precipitationDetail>
-     </precipitationDetail></basicDataValue></measuredValue><measuredValue index="3"></measuredValue><measuredValue index="4"></measuredValue></siteMeasurements>
-     ```
+```xml
+    <siteMeasurements>
+        <measurementSiteReference>NRA1681</measurementSiteReference>
+            <measurementTimeDefault>2015-11-12T19:10:00+00:00</measurementTimeDefault>
+            <measuredValue index="1">
+            <basicDataValue xsi:type="TemperatureInformation">
+                <period>3600</period>
+                <temperature>
+                    <airTemperature>7.9</airTemperature>
+                    <dewPointTemperature>4.2</dewPointTemperature>
+                </temperature>
+            </basicDataValue>
+        </measuredValue>
+        <measuredValue index="2">
+            <basicDataValue xsi:type="PrecipitationInformation">
+                <period>3600</period>
+                <precipitationDetail></precipitationDetail>
+            </basicDataValue>
+        </measuredValue>
+        <measuredValue index="3"></measuredValue>
+        <measuredValue index="4"></measuredValue>
+    </siteMeasurements>
+ ```
+```
   
