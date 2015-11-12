@@ -13,29 +13,43 @@ The XML file contains rows "siteMeasurements" with the items:
   <br/>Each **measuredValue** has:
     <br/>- **index**: starts by 1 and is incremented as the siteMeasurements has more items.
   <br/>And a measuredValue has a **period** and more variables depending on which one of these types it is: 
-  <ul>
-    <li>**TemperatureInformation**</li>
-      <ul>
-        <li>**temperature**</li >
-        <ul>
-          <li>airTemperature</li>
-          <li>dewPointTemperature</li>
-        </ul>  
-      </ul>
-    </ul> 
-  </ul>
-  <p>
-  <ul>
-    <li>**PrecipitationInformation**</li>
-  </ul>
-  <p>
-  <ul>
-    <li>**WindInformation**</li>
-  </ul>
-  <p>
-  <ul>
-    <li>**RoadSurfaceConditionInformation**</li>
-  </ul>
-  
-  
+    <ul>
+        <li>**TemperatureInformation**
+          <ul>
+            <li>**temperature**
+                <ul>
+                  <li>airTemperature</li>
+                  <li>dewPointTemperature</li>
+                </ul>  
+            </li>
+          </ul>
+         </li>
+        <li>**PrecipitationInformation**
+            <ul>
+                <li>precipitationDetail</li>
+            </ul>
+        </li>    
+        <li>**WindInformation**
+            <ul>
+                <li>**wind**
+                    <ul>
+                        <li>maximumWindSpeed</li>
+                        <li>windDirectionBearing</li>
+                        <li>windDirectionCompass</li>
+                        <li>windSpeed</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>**RoadSurfaceConditionInformation**
+            <ul>
+                <li>**roadSurfaceConditionMeasurements**
+                    <ul>
+                        <li>protectionTemperature</li>
+                        <li>roadSurfaceTemperature</li>
+                     </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
   
