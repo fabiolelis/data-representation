@@ -159,7 +159,6 @@ TemperatureInformationPeriod | Integer |
 PrecipitationInformationPeriod | Integer |
 WindInformationPeriod | Integer |
 RoadSurfaceConditionPeriod | Integer |
-
 airTemperature | Decimal |
 dewPointTemperature | Decimal |
 precipitationDetail | String |
@@ -167,6 +166,41 @@ maximumWindSpeed | Decimal |
 windDirectionBearing | Integer |
 windDirectionCompass | Integer |
 windSpeed | Decimal |
+protectionTemperature | Decimal |
+roadSurfaceTemperature | Decimal |
+
+### Calculated requests
+These will be probably useful to get specific and, might, frequent rows:
+
+Get the row with a maximum value for a arg:
+<br/>http://api.irishroadsweather.com/measurements/max/[arg]
+
+Get the row with a minimum value for a arg:
+<br/>http://api.irishroadsweather.com/measurements/min/[arg]
+
+Get the row with a average value for a arg:
+<br/>http://api.irishroadsweather.com/measurements/avg/[arg]
+
+Get all the rows where the the value for a [arg] is smaller than [value]
+<br/>http://api.irishroadsweather.com/measurements/upto/[arg]/[value]
+
+Get all the rows where the the value for a [arg] is larger than [value]
+<br/>http://api.irishroadsweather.com/measurements/from/[arg]/[value]
+
+Order the rows by criteria ([arg] and [descrescent/crescent] 
+<br/>http://api.irishroadsweather.com/measurements/orderby/[arg]/[desc:cres]
+
+Limit the result to the first [nrows] 
+<br/>http://api.irishroadsweather.com/measurements/top/[nrows]
+
+##Going further
+This set of URLs GET requests may look limited at a first glance. However, try to combine two or more of those above. It can provide a significant amount of possibilities to select proper information from the dataset.
+
+Giving a example for that:
+<br/>http://api.irishroadsweather.com/measurements/from/maximumWindSpeed/30.5/orderby/maximumWindSpeed/desc
+
+Your responde will bring a list of site measurements where the maximun wind speed mesuared was 30.5 km/h, ordering those rows by the maximum wind speed decrescent. 
+
 
 
 
