@@ -160,6 +160,13 @@ PrecipitationInformationPeriod | Integer |
 WindInformationPeriod | Integer |
 RoadSurfaceConditionPeriod | Integer |
 
+airTemperature | Decimal |
+dewPointTemperature | Decimal |
+precipitationDetail | String |
+maximumWindSpeed | Decimal |
+windDirectionBearing | Integer |
+windDirectionCompass | Integer |
+windSpeed | Decimal |
 
 
 
