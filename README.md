@@ -77,5 +77,71 @@ The XML file contains rows "siteMeasurements" with the items:
         <measuredValue index="4"></measuredValue>
     </siteMeasurements>
  ```
+ And in JSON format:
+ ```json
+ {
+    "siteMeasurements": {
+        "measurementSiteReference": "NRA1681",
+        "measurementTimeDefault": "2015-11-12T19:10:00+00:00",
+        "measuredValue": [
+            {
+                "_index": "1",
+                "xsi:type" : "TemperatureInformation",
+                "value":{
+                    "period": "3600",
+                    "temperature": {
+                        "airTemperature": "7.9",
+                        "dewPointTemperature": "4.2"
+                    }    
+                }
+                
+            },
+            {
+                "_index": "2",
+                "xsi:type" : "PrecipitationInformation",
+                "value":{
+                    
+                    "period": "3600",
+                    "precipitationDetail": ""
+                }
+                
+            },
+            {
+                "_index": "3"
+            },
+            {
+                "_index": "4"
+            }
+        ]
+    }
+}
 ```
-  
+## URLs
+This API provides a few URLs to get Roads Wheater. For example, a GET request with the following URL
+
+http://api.irishroadsweather.com/measurements/
+
+Will return a list of all the measurements (siteMeasurements) present on the dataset.
+
+```json
+ {
+    "siteMeasurements": {
+        "measurementSiteReference": "NRA1682",
+        "measurementTimeDefault": "2015-11-12T19:10:00+00:00",
+        "measuredValue": [
+            ...
+        ]
+    },
+    "siteMeasurements": {
+        "measurementSiteReference": "NRA1681",
+        "measurementTimeDefault": "2015-11-13T10:40:00+00:00",
+        "measuredValue": [
+            ...
+        ]
+    },
+    ...
+}
+```
+
+
+ 
