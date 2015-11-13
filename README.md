@@ -117,7 +117,7 @@ The XML file contains rows "siteMeasurements" with the items:
 }
 ```
 ## URLs
-This API provides a few URLs to get Roads Wheater. For example, a GET request with the following URL
+This API provides a few URLs to get Roads Weather. For example, a GET request with the following URL
 
 http://api.irishroadsweather.com/measurements/
 
@@ -144,7 +144,7 @@ Will return a list of all the measurements (siteMeasurements) present on the dat
 ```
 
 ### Filters
-Obviously, you may request not all the measurements but only determinated ones.
+Obviously, you may  want request not all the measurements but only determined ones.
 In this case, use a parameterized URL, as below:
 
 http://api.irishroadsweather.com/measurements?filterby=[argname]&value=[value]
@@ -194,12 +194,14 @@ Limit the result to the first [nrows]
 <br/>http://api.irishroadsweather.com/measurements/top/[nrows]
 
 ##Going further
-This set of URLs GET requests may look limited at a first glance. However, try to combine two or more of those above. It can provide a significant amount of possibilities to select proper information from the dataset.
+This set of URLs GET requests may look limited at a first glance. However, try combining two or more of those above. It can provide a significant amount of possibilities to select proper information from the dataset.
 
 Giving a example for that:
 <br/>http://api.irishroadsweather.com/measurements/from/maximumWindSpeed/30.5/orderby/maximumWindSpeed/desc
 
-Your responde will bring a list of site measurements where the maximun wind speed mesuared was 30.5 km/h, ordering those rows by the maximum wind speed decrescent. 
+Your response will bring a list of site measurements where the maximum wind speed measured was 30.5 km/h, ordering those rows by the maximum wind speed from the larger to the smaller. 
+
+
 
 
 
