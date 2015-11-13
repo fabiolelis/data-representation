@@ -143,5 +143,27 @@ Will return a list of all the measurements (siteMeasurements) present on the dat
 }
 ```
 
+### Filters
+Obviously, you may request not all the measurements but only determinated ones.
+In this case, use a parameterized URL, as below:
+
+http://api.irishroadsweather.com/measurements?filterby=[argname]&value=[value]
+
+And the possible values for [argname]
+
+| Argument | Type |
+|------|-----|
+measurementSiteReference | String |
+measurementTimeDefault | Formated [YYYY-MM-DD]T[HH:MM:SS]+[00:00] |
+TemperatureInformationPeriod | Integer |
+PrecipitationInformationPeriod | Integer |
+WindInformationPeriod | Integer |
+RoadSurfaceConditionPeriod | Integer |
+
+
+
+
+
+
 
  
